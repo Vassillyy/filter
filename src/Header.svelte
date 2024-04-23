@@ -77,6 +77,10 @@
 	}
 	button {
 		border-radius: 5px;
+		width: 80px;
+		text-align: center;
+		font-weight: 500;
+		
 	}
 	select,
 	button {
