@@ -75,6 +75,7 @@
 	}
 	button {
 		border-radius: 5px;
+		width: 60px;
 	} 
 	select,
 	button {
