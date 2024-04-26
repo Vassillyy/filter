@@ -1,11 +1,9 @@
-<Header />
 
-<script>
-	import Header from './Header.svelte';
-	import { writable } from 'svelte/store';
-	import { setContext } from 'svelte';
-	
-	let obj = writable({
+/**
+ * Константа для хранения данных
+ * @type {{orgs: {organization: string, vehicles: string[] }[], data: {vin: string, speed: number, fll: number }[]}}
+ */
+	export const obj = {
   "orgs": [ 
     {
       "organization": "Алма",
@@ -1073,7 +1071,5 @@
       "fll": 699.8816077181566
     }
   ]
-});
-
-	setContext('obj', obj);
-</script>
+}
+  

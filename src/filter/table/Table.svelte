@@ -1,10 +1,23 @@
+<script>
+	/**
+	 * Импорт константы obj 
+	 * @module variables/data
+	*/
+	import { obj } from "../variables/data.js";
+	/**
+	 * Импорт хранилищ car и flag
+	 * @module variables/filter
+	*/
+	import { car, flag } from "../variables/filter.js";
+</script>
+
 <div>
 	<table border='3px'>
 		<caption>Результаты:</caption> 
 		<thead>
 			<tr>
 				<th>Скорость</th>
-				<th>Количество топлива</th>
+				<th>Количесвто топлива</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -21,15 +34,6 @@
 		</tbody>
 	</table>
 </div>
-
-
-<script>
-	import { getContext } from 'svelte';
-
-	let obj = getContext('obj');
-	let car = getContext('car');
-	let flag = getContext('flag');
-</script>
 
 <style>
 	* {
@@ -64,6 +68,5 @@
 		text-align: center;
 	}
 </style>
-
 
 
