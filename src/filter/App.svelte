@@ -3,5 +3,5 @@
 	import Table from '../filter/table/Table.svelte';
 </script>
 
-<Header />
+<Header /> 
 <Table />

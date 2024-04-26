@@ -22,7 +22,7 @@
 		</thead>
 		<tbody>
 			{#if $flag}
-				{#each $obj.data as elem}
+				{#each obj.data as elem}
 					{#if elem.vin === $car}
 						<tr>
 							<td>{elem.speed}</td>

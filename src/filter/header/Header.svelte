@@ -39,7 +39,7 @@
 	<label>Организация:
 		<select bind:value={$organization} on:change={ changeFlagFalse, resetCar}>
 			<option value={null}>Организации:</option>
-			{#each $obj.orgs as org}
+			{#each obj.orgs as org}
 				<option>{org.organization}</option>
 			{/each}
 		</select>
@@ -49,7 +49,7 @@
 		<select bind:value={$car} disabled={!$organization} on:change={changeFlagFalse}>
 			<option value={null}>VIN:</option>
 			{#if $organization}
-				{#each $obj.orgs.find(org => org.organization === $organization)?.vehicles as vehicle}
+				{#each obj.orgs.find(org => org.organization === $organization)?.vehicles as vehicle}
 					<option>{vehicle}</option>
 				{/each}
 			{/if}
